@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    background-color: rgb(160, 128, 223);
+
+}
+p{
+   color: rgb(27, 69, 34);
+    margin: 30px auto 10px;
+    
+}
+/* first mem */
+.accordeon{
+    width: 80%;
+    max-width:300px;
+    margin: 30px auto;
+    transition:  0.8s;
+}
+.acc-tittle{
+    display:block;
+    color:rgb(255, 234, 0);
+    cursor:pointer;
+    
+}
+.acc-tittle:hover{
+    color:blue;
+    transition: color .7s;
+    
+}
+.acc-input:active{
+    color: black;
+}
+.mem_cats,.mem_cats_1{
+    width: 300px;
+    height: 150px;
+}
+.acc-mem{
+    display:none;
+}
+.acc-input{
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.acc-input:checked +.acc-mem{
+    display: block;
+}
+#accordion_2:active{
+overflow: hidden;
+color:black
+}
+@media (hover: hover) {
+    /* when hover is supported */
+    a:hover {
+      color: white;
+      background: black;
+    }
+  }
+.acc-tittle:active:hover{
+    color:red;
+    cursor: pointer;
+    transition:.7s ;
+}
+#accordion_2:checked:focus-visible{
+    cursor: pointer;
+    
+}
+.mem_cats,.mem_cats_1:hover{
+    cursor: pointer;
+}
+.mem_cats_1{
+    background-color: blue;
+    user-select:all;
+    
+}
+.mem_cats_1:hover ~ .acc-tittle{
+    color: rgba(13, 13, 236,0.5);
+}
+@media screen and (max-width: 320px) {
+    body {
+         
+        width: calc(100vw -100px);
+    }
+    .accordeon{
+        width: calc(100vw -50px);
+    }
+    .mem_cats{
+      width: 100px; 
+      height: 50px; 
+    }
+}
+@media screen and (max-width: 820px) {
+    body {
+        width: calc(100vw );
+    }
+    .accordeon{
+        width: 250px;
+    }
+}
