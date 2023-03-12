@@ -1,8 +1,15 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: smooth 3s;
+} */
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1;
     background-color: rgb(160, 128, 223);
+
 }
 p{
    color: rgb(27, 69, 34);
@@ -10,18 +17,22 @@ p{
     
 }
 /* first mem */
-.accordion{
-    max-width: 300px;
-    margin: 20px auto;
+.accordeon{
+    width: 90%;
+    max-width:300px;
+    margin: 30px auto;
+    transition:  0.8s;
 }
 .acc-tittle{
     display:block;
     color:rgb(255, 234, 0);
     cursor:pointer;
+    
 }
 .acc-tittle:hover{
     color:blue;
     transition: color .7s;
+    
 }
 .mem_cats{
     width: 300px;
@@ -31,14 +42,20 @@ p{
     display:none;
 }
 .acc-input{
-    --webkit-appearance: none;
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
     appearance: none;
 }
-.acc-input:checked + .acc-tittle{
-    color: black;
-}
-.acc-input:checked + .acc-mem{
+.acc-input:checked +.acc-mem{
     display: block;
-  
-    
+}
+#accordion_2:active{
+overflow: hidden;
+color:black
+}
+.acc-tittle:active:hover{
+    color:red;
+    cursor: pointer;
+    transition:  .7s ;
 }
