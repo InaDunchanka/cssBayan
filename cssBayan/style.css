@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    background-color: rgb(160, 128, 223);
+}
+p{
+   color: rgb(27, 69, 34);
+    margin: 30px auto 10px;
+    
+}
+/* first mem */
+.accordion{
+    max-width: 300px;
+    margin: 20px auto;
+}
+.acc-tittle{
+    color:rgb(255, 234, 0);
+}
+.mem_cats{
+    width: 300px;
+    height: 150px;
+}
