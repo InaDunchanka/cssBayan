@@ -15,9 +15,30 @@ p{
     margin: 20px auto;
 }
 .acc-tittle{
+    display:block;
     color:rgb(255, 234, 0);
+    cursor:pointer;
+}
+.acc-tittle:hover{
+    color:blue;
+    transition: color .7s;
 }
 .mem_cats{
     width: 300px;
     height: 150px;
+}
+.acc-mem{
+    display:none;
+}
+.acc-input{
+    --webkit-appearance: none;
+    appearance: none;
+}
+.acc-input:checked + .acc-tittle{
+    color: black;
+}
+.acc-input:checked + .acc-mem{
+    display: block;
+  
+    
 }
